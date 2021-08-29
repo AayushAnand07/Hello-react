@@ -28,7 +28,6 @@ function App(){
   
   );
   
- /* <h2>Hello React</h2>
-    <h5>Myself Aayush anand a sophmore in vit-ap university, interested in learning and developing new ideas and projects. </h5> */
+ 
 }
 export default App;
