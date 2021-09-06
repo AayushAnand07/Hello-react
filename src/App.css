@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
+  
 }
+ body{
+  padding:0px;
+  margin: 0px;
+  background-color: black;
+} 
 nav{
   background: rgb(109, 138, 109);
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+ 
 }
 label.logo{
   color: white;
@@ -42,10 +51,12 @@ nav ul li a{
   padding: 7px 13px;
   border-radius: 5px;
   text-decoration: none;
+  
 }
 a.active,a:hover{
   background-color: green;
   transition: .5s;
+  color: white;
 }
 
 .checkbtn{
@@ -57,8 +68,35 @@ a.active,a:hover{
   cursor:pointer;
   display: none;
 }
+.footer {
+  position: relative;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  z-index:-8 ;
+  
+  
+}
 #check{
   display:none;
+}
+.my-container{
+  /* border: 2px solid yellow; */
+ background-color: rgb(207, 241, 207);
+ padding-top: 62px;
+ height: 100%;
+
+ 
+  
+}
+.my-row{
+  /* border: 2px solid red; */
+  margin: 20px;
+  margin-bottom: 0px;
+}
+.my-col{
+  /* border: 2px solid blue; */
 }
 section{
   font-size: 24px;
@@ -91,6 +129,7 @@ nav ul li a{
   left: -100%;
   transition: all .5s;
   opacity: 0.95;
+  z-index: 6;
  }
  nav ul li{
    display: block;
@@ -107,6 +146,7 @@ nav ul li a{
  }
  #check:checked ~ul{
    left:0;
+   
  }
 }
 
